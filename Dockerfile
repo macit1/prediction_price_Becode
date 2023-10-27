@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install the required packages
-RUN python -m pip install --upgrade pip
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # Make port 80 available to the world outside this container
