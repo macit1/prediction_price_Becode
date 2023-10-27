@@ -8,7 +8,8 @@ WORKDIR /app
 COPY . /app
 
 # Install the required packages
-RUN pip install --no-cache-dir -r requirements.txt
+RUN python -m pip install --upgrade pip
+RUN pip install -vvv --no-cache-dir -r /app/requirements.txt
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
