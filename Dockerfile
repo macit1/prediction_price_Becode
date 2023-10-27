@@ -15,4 +15,4 @@ RUN pip install -r requirements.txt
 EXPOSE 80
 
 # Define the command to run your application
-CMD "uvicorn app:app --host  0.0.0.0 --port 80"
+CMD "uvicorn app:app --host  0.0.0.0 --port 8000"
